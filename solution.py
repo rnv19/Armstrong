@@ -7,10 +7,12 @@ def checkArmstrong(num):
     temp = num
     while(num == 0):
         a = num % 10
+        print("a", a)
         num = num / 10
+        print("num", num)
         total = a**2
-        
+    print(total, temp)
     if(total == temp):
         return True
     else:
-        return fase
+        return False
