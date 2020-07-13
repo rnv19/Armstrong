@@ -5,7 +5,6 @@ def checkArmstrong(num):
     # Your code goes here
     total = 0
     temp = num
-    print(num)
     while(num != 0):
         a = num % 10
         num = num // 10
