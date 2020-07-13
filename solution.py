@@ -5,14 +5,15 @@ def checkArmstrong(num):
     # Your code goes here
     total = 0
     temp = num
-    while(num == 0):
+    print(num)
+    while(num != 0):
         a = num % 10
-        print("a", a)
-        num = num / 10
-        print("num", num)
-        total = a**2
-    print(total, temp)
+        num = num // 10
+        total += a**3
     if(total == temp):
         return True
     else:
         return False
+
+
+checkArmstrong(153)
